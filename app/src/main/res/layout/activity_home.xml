@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/contbuscador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50sp">
+
+
+                <ImageView
+                    android:id="@+id/imgbus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fondobuscar"
+                    android:src="@drawable/fondorange" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/contlogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@color/white">
+
+
+                <ImageView
+                    android:id="@+id/logohome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12sp"
+                    android:src="@drawable/logo" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contlogo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="42sp">
+
+
+                <SearchView
+                    android:layout_width="300sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/designsearch" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/cont1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contbuscador"
+                android:layout_marginTop="10sp">
+
+
+                <ImageView
+                    android:id="@+id/product1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="230sp"
+                    android:background="@drawable/product1"
+                    android:src="@drawable/gradient" />
+
+
+                <ImageView
+                    android:id="@+id/start1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/product1"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginTop="-70sp"
+                    android:src="@drawable/starts" />
+
+
+                <ImageView
+                    android:id="@+id/sig1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/product1"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-40sp"
+                    android:layout_marginRight="20sp"
+                    android:src="@drawable/siguiente" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/start1"
+                    android:layout_marginLeft="30sp"
+                    android:text="@string/programming"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/cont2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cont1"
+                android:layout_marginTop="12sp">
+
+
+                <ImageView
+                    android:id="@+id/produ2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="230sp"
+                    android:background="@drawable/product2"
+                    android:src="@drawable/gradient" />
+
+
+                <ImageView
+                    android:id="@+id/start2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/produ2"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginTop="-70sp"
+                    android:src="@drawable/starts" />
+
+
+                <ImageView
+                    android:id="@+id/sig2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/produ2"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-40sp"
+                    android:layout_marginRight="20sp"
+                    android:src="@drawable/siguiente" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/start2"
+                    android:layout_marginLeft="30sp"
+                    android:text="@string/webdesign"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/cont3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cont2"
+                android:layout_marginTop="12sp"
+                android:layout_marginBottom="40sp">
+
+
+                <ImageView
+                    android:id="@+id/produ3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="230sp"
+                    android:background="@drawable/product3"
+                    android:src="@drawable/gradient" />
+
+                <ImageView
+                    android:id="@+id/start3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/produ3"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginTop="-90sp"
+                    android:src="@drawable/starts" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/start3"
+                    android:layout_marginLeft="30sp"
+                    android:text="@string/security"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/sig3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/produ3"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-60sp"
+                    android:layout_marginRight="20sp"
+                    android:src="@drawable/siguiente" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            android:id="@+id/icon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12sp">
+
+            <ImageView
+                android:id="@+id/imgmarket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:onClick="market"
+                android:scaleType="fitStart"
+                android:src="@drawable/market" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgmarket"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-12sp"
+                android:paddingBottom="3sp"
+                android:text="@string/item1" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/icon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32sp"
+            android:layout_toRightOf="@id/icon1">
+
+            <ImageView
+                android:id="@+id/imgjobs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:onClick="jobs"
+                android:src="@drawable/jobs" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgjobs"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-10sp"
+                android:paddingBottom="3sp"
+                android:text="@string/item2" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/icon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32sp"
+            android:layout_toRightOf="@id/icon2">
+
+            <ImageView
+                android:id="@+id/imgsettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:onClick="setting"
+                android:src="@drawable/settings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgsettings"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-10sp"
+                android:paddingBottom="3sp"
+                android:text="@string/item3" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/icon4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32sp"
+            android:layout_toRightOf="@id/icon3">
+
+            <ImageView
+                android:id="@+id/imgprefile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4sp"
+                android:onClick="profile"
+                android:src="@drawable/iconperson" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgprefile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-10sp"
+                android:paddingBottom="3sp"
+                android:text="@string/item4" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

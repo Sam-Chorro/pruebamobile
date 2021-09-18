@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/header_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="-22dp"
+                android:contentDescription="header"
+                android:src="@drawable/header" />
+
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/header_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="42sp"
+                android:contentDescription="logo"
+                android:src="@drawable/logo" />
+
+
+            <TextView
+                android:id="@+id/label1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:layout_marginLeft="60sp"
+                android:layout_marginTop="20sp"
+                android:text="@string/lb1"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/inp1"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/label1"
+                android:layout_marginLeft="60sp"
+                android:backgroundTint="@color/teal_200"
+                android:drawableRight="@drawable/iconemail"
+                android:hint="@string/hint1"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/label2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inp1"
+                android:layout_marginLeft="60sp"
+                android:layout_marginTop="20sp"
+                android:text="@string/lb2"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+
+                android:id="@+id/inp2"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/label2"
+                android:layout_marginLeft="60sp"
+                android:backgroundTint="@color/teal_200"
+                android:drawableRight="@drawable/iconpass"
+                android:hint="@string/hint2"
+                android:inputType="textPassword"
+                android:maxLength="10"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+
+
+            <TextView
+                android:id="@+id/lb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inp2"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="22sp"
+                android:layout_marginRight="52sp"
+                android:onClick="recordar"
+                android:text="@string/lb3"
+                android:textColor="@color/orange"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lb3"
+                android:layout_marginLeft="42sp"
+                android:layout_marginTop="12sp"
+                android:switchMinWidth="62sp"
+                android:thumbTint="@color/white"
+                android:track="@color/orange" />
+
+
+            <TextView
+                android:id="@+id/lb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/switch1"
+                android:layout_marginLeft="42sp"
+                android:text="@string/lb4"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/lb5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lb4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32sp"
+                android:onClick="created"
+                android:text="@string/lb5"
+                android:textColor="@color/orange"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:layout_width="350sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lb5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="22sp"
+                android:layout_marginBottom="22sp"
+                android:background="@drawable/bordebtn"
+                android:elevation="2sp"
+                android:onClick="start"
+                android:padding="22sp"
+                android:shadowColor="@color/black"
+                android:text="@string/btn1"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

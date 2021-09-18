@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".singup">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imgsing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:hapticFeedbackEnabled="true"
+                android:scaleType="center"
+                android:src="@drawable/fondosingup" />
+
+
+            <ImageView
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="40sp"
+                android:layout_marginTop="40sp"
+                android:onClick="backsing"
+                android:padding="12sp"
+                android:src="@drawable/back" />
+
+
+            <ImageView
+                android:layout_width="120sp"
+                android:layout_height="120sp"
+                android:layout_below="@id/imgsing"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-80sp"
+                android:elevation="16sp"
+                android:src="@drawable/check" />
+
+
+            <TextView
+                android:id="@+id/first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgsing"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50sp"
+                android:layout_marginTop="50sp"
+                android:text="@string/first"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/inpfirst"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/first"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50sp"
+                android:drawableRight="@drawable/iconperson"
+                android:inputType="text"
+                android:maxLength="20" />
+
+
+            <TextView
+                android:id="@+id/lasts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inpfirst"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50sp"
+                android:layout_marginTop="30sp"
+                android:text="@string/Last"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/inplast"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lasts"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50sp"
+                android:drawableRight="@drawable/iconperson"
+                android:inputType="text"
+                android:maxLength="20" />
+
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inplast"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50sp"
+                android:layout_marginTop="30sp"
+                android:text="@string/Email"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/inpmail"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50sp"
+                android:drawableRight="@drawable/iconemail"
+                android:inputType="textEmailAddress"
+                android:maxLength="25" />
+
+
+            <TextView
+                android:id="@+id/pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inpmail"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50sp"
+                android:layout_marginTop="30sp"
+                android:text="@string/Pass"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+
+                <EditText
+                    android:layout_below="@id/pass"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="50sp"
+                    android:drawableRight="@drawable/iconpass"
+                    android:id="@+id/inpPass"
+                    android:layout_width="300sp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:maxLength="10" />
+
+
+
+
+            <TextView
+                android:id="@+id/confirmpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inpPass"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50sp"
+                android:layout_marginTop="30sp"
+                android:text="@string/Confirmpass"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+
+                <EditText
+                    android:layout_below="@id/confirmpass"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="50sp"
+                    android:drawableRight="@drawable/iconpass"
+                    android:id="@+id/inpconfirmpass"
+                    android:layout_width="300sp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:maxLength="10" />
+
+
+            <TextView
+                android:id="@+id/p3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inpconfirmpass"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50sp"
+                android:text="@string/p3"
+                android:textColor="@color/gray"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/p4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/p3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30sp"
+                android:text="@string/p4"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/p5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/p4"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/orange"
+                android:onClick="terms"
+                android:text="@string/p5"
+                android:textColor="@color/orange"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="350sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/p5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="22sp"
+                android:layout_marginBottom="30sp"
+                android:background="@drawable/bordebtn"
+                android:onClick="createAccount"
+                android:padding="22sp"
+                android:text="@string/btn3"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

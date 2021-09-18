@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">prueba-mobile</string>
+
+    //Splash
+    <string name="bienvenido">Bienvenido</string>
+
+    //Login
+    <string name="lb1">E-mail</string>
+    <string name="lb2">Password</string>
+    <string name="lb3"><u>I Forgot my Password</u></string>
+    <string name="lb4">Remember Password</string>
+    <string name="lb5"><u>Created new account</u></string>
+
+    <string name="hint1">ejemplo@gmail.com</string>
+    <string name="hint2">********</string>
+
+    <string name="btn1">Get Started</string>
+
+
+    //notification
+
+    <string name="welcome">Welcome!</string>
+    <string name="p1">We haven sent you account validation code</string>
+    <string name="p2">Please chek your email.</string>
+    <string name="btn2">Ok!</string>
+
+    //Sing Up
+
+    <string name="first">First Name.</string>
+    <string name="Last">Last Name.</string>
+    <string name="Email">E-mail Address.</string>
+    <string name="Pass">Your Password</string>
+    <string name="Confirmpass">Confirm your Password</string>
+
+    <string name="p3">At least 8 characters, containing a letter and a number</string>
+    <string name="p4">By creating an account, I agre to the</string>
+    <string name="p5"><u>terms &amp; condition and privacity policy</u></string>
+
+    <string name="btn3">Created Account</string>
+
+    //home
+    <string name="programming">Programming.</string>
+    <string name="webdesign">Web Deseign.</string>
+    <string name="security">Security.</string>
+
+
+    //menu
+
+    <string name="item1">Marketplace</string>
+    <string name="item2">Jobs</string>
+    <string name="item3">Settings</string>
+    <string name="item4">Profile</string>
+
+</resources>

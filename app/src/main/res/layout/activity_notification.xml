@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notification">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="-70sp"
+                android:src="@drawable/fondonoti" />
+
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="320sp"
+                android:layout_height="320sp"
+                android:layout_below="@+id/img1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-180sp"
+                android:elevation="@dimen/cardview_compat_inset_shadow"
+                android:scaleType="center"
+                android:src="@drawable/circle2" />
+
+
+            <RelativeLayout
+                android:id="@+id/relative1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-120sp"
+                android:elevation="16sp">
+
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="180sp"
+                    android:layout_height="200sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/circle2" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="center"
+                    android:src="@drawable/checkemail" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@id/lb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="120sp"
+                android:text="@string/welcome"
+                android:textColor="@color/blue"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@id/lb5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lb4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12sp"
+                android:text="@string/p1"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/lb6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lb5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8sp"
+                android:text="@string/p2"
+                android:textColor="@color/gray"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:layout_width="350sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lb6"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="22sp"
+                android:layout_marginBottom="30sp"
+                android:background="@drawable/bordebtn"
+                android:onClick="ok"
+                android:padding="22sp"
+                android:text="@string/btn2"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
